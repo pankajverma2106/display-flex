@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Display Flex Demo</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/flex.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $( ".toggle_button" ).click(function() {
+        $( ".toggle_area" ).slideToggle( "slow" );
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="flex_parent_level1 d_flex">
+    <!-- 1st level child -->
+    <div class="flex_child_level1 aside1" data-label="1">
+      <div class="header">
+      	<div class="logo">
+          <h1>Company <span>logo</span></h1>
+        </div>
+        <div class="menu">
+          <a href="javascript:void(0);" class="toggle_button"></a>
+        </div>
+        <div class="nav_area">
+          <div class="toggle_area">
+            <ul class="navigation">
+              <li><a href="#">Lorem </a></li>
+              <li><a href="#">Ipsum </a>
+                <ul>
+                  <li><a href="#">Lorem </a></li>
+                  <li><a href="#">Ipsum </a></li>
+                  <li><a href="#">Dolor </a></li>
+                  <li><a href="#">Sit </a></li>
+                  <li><a href="#">Amet</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dolor </a>
+                <ul>
+                  <li><a href="#">Lorem </a></li>
+                  <li><a href="#">Ipsum </a></li>
+                  <li><a href="#">Dolor </a></li>
+                  <li><a href="#">Sit </a></li>
+                  <li><a href="#">Amet</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sit </a>
+                <ul>
+                  <li><a href="#">Lorem </a></li>
+                  <li><a href="#">Ipsum </a></li>
+                  <li><a href="#">Dolor </a></li>
+                  <li><a href="#">Sit </a></li>
+                  <li><a href="#">Amet</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Amet</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 1st level child -->
+    <div class="flex_child_level1 aside2 main_banner" data-label="2">
+      <img src="images/banner.jpeg">
+    </div>
+    <!-- 1st level child -->
+    <div class="flex_child_level1 aside3" data-label="3">
+      <ul class="left_links sticky">
+        <li><a href="#">Armwear‎ (5 C, 16 P)</a></li>
+        <li><a href="#"> Dresses‎ (2 C, 96 P)</a></li>
+        <li><a href="#"> Footwear‎ (13 C, 52 P)</a></li>
+        <li><a href="#"> Gowns‎ (28 P)</a></li>
+        <li><a href="#"> Headgear‎ (15 C, 144 P)</a></li>
+        <li><a href="#"> Hosiery‎ (2 C, 33 P)</a></li>
+        <li><a href="#"> Jackets‎ (82 P)</a></li>
+        <li><a href="#"> Jeans by type‎ (3 P)</a></li>
+        <li><a href="#"> Neckwear‎ (4 C, 30 P)</a></li>
+        <li><a href="#"> Outerwear‎ (3 C, 4 P)</a></li>
+        <li><a href="#"> Ponchos‎ (4 P, 1 F)</a></li>
+        <li><a href="#"> Robes and cloaks‎ (70 P)</a></li>
+        <li><a href="#"> Royal attire‎ (2 C)</a></li>
+        <li><a href="#"> Saris‎ (1 C, 45 P, 1 F)</a></li>
+        <li><a href="#"> Skirts‎ (64 P)</a></li>
+      </ul>
+    </div>
+    <!-- 1st level child -->
+    <div class="flex_child_level1 aside4" data-label="4">
+      <div>
+        <div class="common_heading sticky">Space Around</div>
+        <ul class="product_listing space_around">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div>
+        <div class="common_heading sticky">Space Between</div>
+        <ul class="product_listing space_between">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 1st level child -->
+    <div class="flex_child_level1 aside6" data-label="6">
+      <div class="footer_banners">
+        <div class="item">
+          <img src="images/banner_dummy.gif">
+        </div>
+        <div class="item">
+          <img src="images/banner_dummy.gif">
+        </div>
+        <div class="item">
+          <img src="images/banner_dummy.gif">
+        </div>
+      </div>
+    </div>
+    <!-- 1st level child -->
+    <div class="flex_child_level1 aside7" data-label="7">
+      <div class="footer">
+        <div>
+          <h1>Company <span>logo</span></h1>
+        </div>
+        <div>
+          facebook <span>|</span> twitter <span>|</span> google+
+        </div>
+        <div>
+          © 2017 Privacy | Policy
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
